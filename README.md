@@ -10,4 +10,4 @@ CustomKeyboard* keyboard=[CustomKeyboard initWithDelegate:self];
 
 ```
 ##效果
-![](plateNOKeyboard/2017-07-27 14_57_27.gif)
+![效果](https://github.com/Wayzo/plateNOKeyboard/blob/master/2017-07-27 14_57_27.gif)
