@@ -9,5 +9,7 @@ CustomKeyboard* keyboard=[CustomKeyboard initWithDelegate:self];
 [keyboard show];
 
 ```
+
 ##效果
+
 ![效果](https://github.com/Wayzo/plateNOKeyboard/blob/master/result.gif)
