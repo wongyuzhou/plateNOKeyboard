@@ -9,3 +9,5 @@ CustomKeyboard* keyboard=[CustomKeyboard initWithDelegate:self];
 [keyboard show];
 
 ```
+##效果
+![](plateNOKeyboard/2017-07-27 14_57_27.gif)
