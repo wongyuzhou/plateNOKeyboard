@@ -83,10 +83,8 @@
     doneBtn.layer.borderColor=ColorFromHex(0x1FBCD2).CGColor;
     doneBtn.layer.borderWidth=1;
     [_headerView addSubview:doneBtn];
-    
 }
 -(void)provinceView{
-    
     _provinceView=[[UIView alloc]initWithFrame:CGRectMake(0, 44, kScreenWidth, kContentHeight-44)];
     _provinceView.backgroundColor=ColorFromHex(0xeeeeee);
     float viewWidth=kScreenWidth/10;
@@ -115,7 +113,6 @@
     switchBtn.layer.cornerRadius=5;
     [cancelView addSubview:switchBtn];
     
-    
     UIView* deleteView=[[UIView alloc]initWithFrame:CGRectMake(kScreenWidth-viewWidth*1.5, 132, viewWidth*1.5, 44)];
     [_provinceView addSubview:deleteView];
     UIButton* deleteBtn=[[UIButton alloc]initWithFrame:CGRectMake(5, 5, viewWidth*1.5-10, 34)];
@@ -125,7 +122,6 @@
     deleteBtn.layer.cornerRadius=5;
     deleteBtn.layer.masksToBounds=YES;
     [deleteView addSubview:deleteBtn];
-    
     
     NSArray* arr=[_provinces subarrayWithRange:NSMakeRange(30, 7)];
     for (int i=0; i<arr.count; i++) {
@@ -198,7 +194,6 @@
     deleteBtn.layer.cornerRadius=5;
     [deleteView addSubview:deleteBtn];
     
-    
     NSArray* arr2=[_letters subarrayWithRange:NSMakeRange(29, 7)];
     for (int i=0; i<arr2.count; i++) {
         UIView* view=[[UIView alloc]initWithFrame:CGRectMake(viewWidth*1.5+i%10*viewWidth, 132, viewWidth, 44)];
@@ -258,7 +253,8 @@
         }
     }
 }
-//
+
+//public
 -(void)show{
     [UIView animateWithDuration:0.3 animations:^{
         self.backgroundColor=[UIColor colorWithWhite:0 alpha:.3];
@@ -274,7 +270,7 @@
     }];
 }
 
-
+//other
 -(UIColor*)randomColor{
     CGFloat hue = (arc4random() %256/256.0);
     CGFloat saturation = (arc4random() %128/256.0) +0.5;
@@ -282,6 +278,4 @@
     UIColor*color = [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1];
     return color;
 }
-
-
 @end
